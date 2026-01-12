@@ -10,7 +10,7 @@ public class MyDataSource {
 	private static HikariDataSource datasource;
 	
 	static {
-		config.setJdbcUrl("jdbc:mysql://localhost/modeloalumnos?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false");
+		config.setJdbcUrl("jdbc:mysql://localhost/alumno02?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false");
 		config.setUsername("mar");
 		config.setPassword("alumno");
 		config.addDataSourceProperty("maximumPoolSize", 1);//aqui estoy configurandon el nº máximo de conexiones

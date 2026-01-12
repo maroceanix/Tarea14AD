@@ -13,8 +13,10 @@ public class App {
 		try(Connection conn = MyDataSource.getConnection())	{
 			DatabaseMetaData metaData=conn.getMetaData();
 			String[] types= {"TABLES"};
-			ResultSet tables= metaData.getTables(null, null, null, types);
-			
+			ResultSet tables= metaData.getTables(null, null, "%", types);
+			while(tables.next()) {
+				System.out.println(tables.getString("TABLE_NAME"));
+			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
