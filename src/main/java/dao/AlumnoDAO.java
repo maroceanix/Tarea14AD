@@ -6,13 +6,15 @@ import java.util.List;
 import model.Alumno;
 
 public interface AlumnoDAO {
-	int add(Alumno alumno) throws Exception;
+	int add(Alumno alumno);
 	
-	Alumno getByNia(int nia) throws Exception;
+	Alumno getByNia(int nia);
 	
-	List <Alumno> getAll() throws Exception;
+	List <Alumno> getAll();
 	
-	int update (Alumno alumno) throws Exception;
+	int update (Alumno alumno);
 	
-	void delete(int nia) throws Exception;
+	void delete(int nia);
+	
+	//interfaz libre de tratamiento de excepciones por si luego quieres hacer otra interfaz de fichero
 }
