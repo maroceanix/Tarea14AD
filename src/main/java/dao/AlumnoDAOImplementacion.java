@@ -132,17 +132,18 @@ public class AlumnoDAOImplementacion implements AlumnoDAO {
 	}
 
 	@Override
-	public void delete(int nia) {
-		String sql="DELETE FROM alumnos WHERE NIA = ?";
+	public int delete(int nia) {
+		int result=-1;
+		String sql="DELETE FROM alumno WHERE NIA = ?";
 		try(Connection conn=MyDataSource.getConnection();
 				PreparedStatement pst=conn.prepareStatement(sql)){
 			pst.setInt(1, nia);
-			pst.executeUpdate();
+			result=pst.executeUpdate();
 			
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+				return result;
 		} 
+		return result;
 	}
 
 }

@@ -72,9 +72,10 @@ public class Alumno {
 			this.fecha_nacimiento = fecha_nacimiento;
 		}
 		
-		public String convertirFechaSQL() {
-			return this.getFecha_nacimiento().getYear()+"-"+this.getFecha_nacimiento().getMonthValue()+"-"+this.getFecha_nacimiento().getDayOfMonth();
-		}
+//		public String convertirFechaSQL() {
+//			return this.getFecha_nacimiento().getYear()+"-"+this.getFecha_nacimiento().getMonthValue()+"-"+this.getFecha_nacimiento().getDayOfMonth();
+//		}
+		
 		@Override
 		public int hashCode() {
 			return Objects.hash(apellidos, ciclo, curso, fecha_nacimiento, genero, grupo, nia, nombre);

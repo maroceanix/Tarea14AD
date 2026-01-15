@@ -14,7 +14,7 @@ public interface AlumnoDAO {
 	
 	int update (Alumno alumno);
 	
-	void delete(int nia);
+	int delete(int nia);
 	
 	//interfaz libre de tratamiento de excepciones por si luego quieres hacer otra interfaz de fichero
 }
