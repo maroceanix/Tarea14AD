@@ -11,7 +11,7 @@ public class Alumno {
 		public Alumno() {
 			
 		}
-		public Alumno(int nia, String nombre, String apellidos, String genero, String ciclo, String curso, String grupo, int anio, int mes, int dia) {
+		public Alumno(int nia, String nombre, String apellidos, String genero, String ciclo, String curso, String grupo, LocalDate fecha) {
 			this.nia = nia;
 			this.nombre = nombre;
 			this.apellidos = apellidos;
@@ -19,7 +19,7 @@ public class Alumno {
 			this.ciclo = ciclo;
 			this.curso = curso;
 			this.grupo = grupo;
-			this.fecha_nacimiento=LocalDate.of(anio, mes, dia);
+			this.fecha_nacimiento=fecha;
 			
 			
 		}
