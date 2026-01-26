@@ -26,7 +26,7 @@ public class AlumnoDAOImplementacion implements AlumnoDAO {
 		return instance;
 	}
 	@Override
-	public int add(Alumno alumno)  { //esto simplemente son nombres que yo decido ponerle a los métodos, add, getbynia, getall, 
+	public int add(Alumno alumno) { //esto simplemente son nombres que yo decido ponerle a los métodos, add, getbynia, getall, 
 		//update, etc, que me devuelva un alumno o una llsita de alumno o loq ue yo quiera. Aquí, insetación de un alumno en la bd
 		String sql="INSERT INTO alumno (NIA, Nombre, Apellidos, Genero, Fecha_nacimiento, Ciclo, Curso, Grupo) VALUES"
 				+ "(?, ?, ?, ?, ?, ?, ?, ?);";
